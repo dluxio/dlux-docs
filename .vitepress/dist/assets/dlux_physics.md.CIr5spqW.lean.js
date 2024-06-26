@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a1 as t}from"./chunks/framework.CSTfz1pA.js";const y=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"dlux/physics.md","filePath":"dlux/physics.md"}'),e={name:"dlux/physics.md"},h=t("",19),l=[h];function n(p,r,o,k,d,c){return a(),i("div",null,l)}const g=s(e,[["render",n]]);export{y as __pageData,g as default};
