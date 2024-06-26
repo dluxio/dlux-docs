@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a1 as t}from"./chunks/framework.C2mR__yb.js";const y=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"dlux/assets.md","filePath":"dlux/assets.md"}'),n={name:"dlux/assets.md"},e=t("",5),h=[e];function l(p,k,E,r,d,g){return a(),i("div",null,h)}const c=s(n,[["render",l]]);export{y as __pageData,c as default};
