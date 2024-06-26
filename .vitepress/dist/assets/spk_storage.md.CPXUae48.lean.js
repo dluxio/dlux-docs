@@ -1,1 +1,0 @@
-import{_ as a,c as t,o,a1 as n}from"./chunks/framework.CSTfz1pA.js";const b=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"spk/storage.md","filePath":"spk/storage.md"}'),e={name:"spk/storage.md"},s=n("",14),l=[s];function i(r,u,c,p,d,h){return o(),t("div",null,l)}const f=a(e,[["render",i]]);export{b as __pageData,f as default};
