@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a1 as t}from"./chunks/framework.CSTfz1pA.js";const E=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"dlux/video.md","filePath":"dlux/video.md"}'),e={name:"dlux/video.md"},o=t("",7),n=[o];function d(h,l,p,r,k,c){return a(),i("div",null,n)}const u=s(e,[["render",d]]);export{E as __pageData,u as default};
