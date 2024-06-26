@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as r,a1 as t}from"./chunks/framework.C2mR__yb.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"spk/services.md","filePath":"spk/services.md"}'),i={name:"spk/services.md"},s=t("",8),o=[s];function n(c,l,h,d,p,m){return r(),a("div",null,o)}const u=e(i,[["render",n]]);export{_ as __pageData,u as default};
