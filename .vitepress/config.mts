@@ -12,7 +12,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     editLink: {
-      pattern: 'https://github.com/dlux-io/dlux-docs/edit/main/:path'
+      pattern: 'https://github.com/dlux-io/dlux-docs/edit/main/:path',
+      text: 'Edit this page on GitHub'
     },
     search: {
       provider: 'algolia',
