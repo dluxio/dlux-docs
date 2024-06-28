@@ -15,7 +15,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: '819ZOMNEN9',
-        apiKey: '61a41f1f483bb427deded79575d31c9a',
+        apiKey: '11294ecec68e8e1ff62c059512953ef4',
         indexName: 'dlux'
       }
     },
