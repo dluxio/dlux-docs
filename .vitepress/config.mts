@@ -8,6 +8,15 @@ export default defineConfig({
   description: "For DLUX Publishing, SPK Network, and Honeycomb L2's",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: '819ZOMNEN9',
+        apiKey: '61a41f1f483bb427deded79575d31c9a',
+        indexName: 'dlux'
+      }
+    },
+
     nav: [
       { text: 'DLUX', link: '/dlux' },
       { text: 'SPK', link: '/spk' },
