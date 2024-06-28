@@ -7,6 +7,7 @@ export default defineConfig({
   },
   base: '/docs/',
   cleanUrls: true,
+  lastUpdated: true,
   title: "Documentation",
   description: "For DLUX Publishing, SPK Network, and Honeycomb L2's",
   themeConfig: {
