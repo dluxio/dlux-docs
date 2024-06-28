@@ -11,6 +11,9 @@ export default defineConfig({
   description: "For DLUX Publishing, SPK Network, and Honeycomb L2's",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    editLink: {
+      pattern: 'https://github.com/dlux-io/dlux-docs/edit/main/:path'
+    },
     search: {
       provider: 'algolia',
       options: {
