@@ -4,9 +4,12 @@ DLUX offers a decentralized protocol for minting and trading NFT's. These tokens
 
 # Actions Available
 
+token_ in the ids is the config.prefix.
+dlux_send on DLUX for example
+
 ## NFT (non-fungible token) Actions
 
-### NFT Transfer (id: dlux_nft_transfer)
+### NFT Transfer (id: token_nft_transfer)
 
 This action transfers an NFT from one wallet to another.
 
@@ -24,7 +27,7 @@ This action transfers an NFT from one wallet to another.
 }`
 ```
 
-### NFT Reserve Transfer (id: dlux_nft_reserve_transfer)
+### NFT Reserve Transfer (id: token_nft_reserve_transfer)
 
 This action builds a token escrow contract with payment price and expiration. Seller uses this action to create a contract for specific wallet to pay for and receive the NFT. As opposed to listing it publicly on the market which would allow any buyer to buy the token.
 
@@ -45,7 +48,7 @@ This action builds a token escrow contract with payment price and expiration. Se
 }`
 ```
 
-### NFT Reserve Complete (id: dlux_nft_reserve_complete)
+### NFT Reserve Complete (id: token_nft_reserve_complete)
 
 This action fulfills an NFT escrow transfer via complete payment. Recipient of NFT uses this action to complete the contract and receive the NFT. If successfully, the price defined in the contract will be deducted from the wallet.
 
@@ -61,7 +64,7 @@ This action fulfills an NFT escrow transfer via complete payment. Recipient of N
 }`
 ```
 
-### NFT Transfer Cancel (id: dlux_nft_transfer_cancel)
+### NFT Transfer Cancel (id: token_nft_transfer_cancel)
 
 This action cancels an NFT transfer escrow contract.
 
@@ -77,7 +80,7 @@ This action cancels an NFT transfer escrow contract.
 }`
 ```
 
-### NFT Delete (id: dlux_nft_delete)
+### NFT Delete (id: token_nft_delete)
 
 This action will permanently delete an NFT. Cannot be undone. Changes NFT's owner to D.
 
@@ -92,7 +95,7 @@ This action will permanently delete an NFT. Cannot be undone. Changes NFT's owne
     uid: 'AA'
 }`
 ```
-### NFT Define (id: dlux_nft_define)
+### NFT Define (id: token_nft_define)
 
 This action defines a new NFT set.
 
@@ -204,7 +207,7 @@ The script should return:
 ```
 
 
-### NFT Mint (id: dlux_nft_mint)
+### NFT Mint (id: token_nft_mint)
 
 This action mints a new NFT 
 
@@ -218,7 +221,7 @@ This action mints a new NFT
 }`
 ```
 
-### NFT Auction (id: dlux_nft_auction)
+### NFT Auction (id: token_nft_auction)
 
 This action lists an NFT for auction on the market. Temporarily changes owner to 'ah'.
 
@@ -240,7 +243,7 @@ This action lists an NFT for auction on the market. Temporarily changes owner to
 }`
 ```
 
-### NFT Auction bidding (id: dlux_nft_bid)
+### NFT Auction bidding (id: token_nft_bid)
 
 This action makes a bid for an active NFT action
 
@@ -257,7 +260,7 @@ This action makes a bid for an active NFT action
     bid_amount: 1000
 }`
 ```
-### NFT Sell (id: dlux_nft_sell)
+### NFT Sell (id: token_nft_sell)
 
 This lists an NFT for sale on the market.
 
@@ -274,7 +277,7 @@ This lists an NFT for sale on the market.
     price: 1000 // 1.000 DLUX
 }`
 ```
-### NFT Market Buy (id: dlux_nft_buy)
+### NFT Market Buy (id: token_nft_buy)
 
 #### params:
 * set = string representing the name of the NFT set
@@ -290,7 +293,7 @@ This lists an NFT for sale on the market.
 }`
 ```
 
-### NFT Sell Cancel (id: dlux_nft_sell_cancel)
+### NFT Sell Cancel (id: token_nft_sell_cancel)
 
 This action cancels an NFT market sale listing
 
@@ -309,7 +312,7 @@ This action cancels an NFT market sale listing
 
 Similar to NFTs, DLUX offers a decentralized protocol for creating and trading NFT's. These tokens can be airdropped, auctioned, transferred, sold, bought, held in escrow, or bid on.
 
-### FT Transfer (id: dlux_ft_transfer)
+### FT Transfer (id: token_ft_transfer)
 
 This action transfers a FT from wallet to wallet.
 
@@ -325,7 +328,7 @@ This action transfers a FT from wallet to wallet.
     to: 'somebody'
 }`
 ```
-### FT Airdrop (id: dlux_ft_airdrop)
+### FT Airdrop (id: token_ft_airdrop)
 
 This action airdrops tokens to a list of wallets.
 
@@ -340,7 +343,7 @@ This action airdrops tokens to a list of wallets.
     to: ['somebody','someother']
 }`
 ```
-### FT Escrow (id: dlux_ft_escrow)
+### FT Escrow (id: token_ft_escrow)
 
 This action creates escrow contract for a token.
 
@@ -351,7 +354,7 @@ This action creates escrow contract for a token.
 Not implemented
 
 
-### FT Escrow Complete (id: dlux_ft_escrow_complete)
+### FT Escrow Complete (id: token_ft_escrow_complete)
 
 This action completes escrow for a token.
 
@@ -363,7 +366,7 @@ This action completes escrow for a token.
 Not implemented
 
 
-### FT Escrow Cancel (id: dlux_ft_escrow_cancel)
+### FT Escrow Cancel (id: token_ft_escrow_cancel)
 
 This action cancels escrow for a token.
 
@@ -374,7 +377,7 @@ This action cancels escrow for a token.
 Not implemented
 
 
-### FT Sell (id: dlux_ft_sell)
+### FT Sell (id: token_ft_sell)
 
 This action lists a token for sale on the market.
 
@@ -385,7 +388,7 @@ This action lists a token for sale on the market.
 Not implemented
 
 
-### FT Buy (id: dlux_ft_buy)
+### FT Buy (id: token_ft_buy)
 
 This action places a buy order for token on the market.
 
@@ -396,7 +399,7 @@ This action places a buy order for token on the market.
 Not implemented
 
 
-### FT Sell Cancel (id: dlux_ft_sell_cancel)
+### FT Sell Cancel (id: token_ft_sell_cancel)
 
 This action cancels the sale for a token on the market.
 
@@ -407,7 +410,7 @@ This action cancels the sale for a token on the market.
 Not implemented
 
 
-### FT Auction (id: dlux_ft_auction)
+### FT Auction (id: token_ft_auction)
 
 This action lists a token up for action.
 
@@ -419,7 +422,7 @@ This action lists a token up for action.
 Not implemented
 
 
-### FT Bid (id: dlux_ft_bid)
+### FT Bid (id: token_ft_bid)
 
 This action enters an auction bid for a token.
 
