@@ -29,7 +29,7 @@ export default defineConfig({
       { text: 'DLUX', link: '/dlux' },
       { text: 'SPK', link: '/spk' },
       { text: 'Honeycomb', link: '/honeycomb' },
-      { text: '1.2.0',
+      { text: '1.5.0',
         items: [
           { text: 'Changelog', link: '/changelog' },
           { text: 'Contributing', link: '/contributing' },
@@ -121,7 +121,10 @@ export default defineConfig({
           { text: 'New Token', link: '/honeycomb/new-token' },
           { text: 'New Node', link: '/honeycomb/new-node' },
           { text: 'Node Voting', link: '/honeycomb/node-voting' },
-          { text: 'Token Actions', link: '/honeycomb/token-actions' }
+          { text: 'Smart Contracts', link: '/honeycomb/building-smart-contracts' },
+          { text: 'Actions', link: '/honeycomb/actions' },
+          { text: 'NFT Actions', link: '/honeycomb/nft-actions' },
+          { text: 'API Wiki', link: '/honeycomb/api' }
         ]
       }
     ],
