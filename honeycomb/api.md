@@ -103,25 +103,198 @@ List of all processed user transactions. Some Internal transactions.
 }```
 
 ### /api/status/:txid
+#### Sample Respone 
 ### /markets
- //for finding node runner and tasks information
+#### Sample Respone 
 ### /runners
- //list of accounts that determine consensus... will also be the multi-sig accounts
+#### Sample Respone 
 ### /queue
+#### Sample Respone 
 ### /api/protocol
+#### Sample Respone 
 ### /api/mirrors
+#### Sample Respone 
 ### /api/coin_detail
+#### Sample Respone 
 
 ## DEX API
-
-### /dex', API.dex);
-### /api/tickers', API.tickers);
-### /api/orderbook', API.orderbook);
-### /api/orderbook/:ticker_id', API.orderbook);
-### /api/pairs', API.pairs);
-### /api/historical', API.historical_trades);
-### /api/historical/:ticker_id', API.historical_trades);
-### /api/recent/:ticker_id', API.chart);
+All Endpoints in DEX that start with /api are meant to follow [CoinGecko Integration API Standards](https://docs.google.com/document/d/1v27QFoQq1SKT3Priq3aqPgB70Xd_PnDzbOCiuoCyixw/edit?tab=t.0)
+* /api/tickers
+* /api/orderbook
+* /api/orderbook/:ticker_id
+* /api/pairs
+* /api/historical
+* /api/historical/:ticker_id
+* /api/recent/:ticker_id
+### /dex
+Is a call meant to draw the whole market for front ends. It can power charts, order books, and everything else
+#### Sample Respone
+```
+{
+   "markets": {
+      "hbd": {
+         "buyBook": "0.001000_DLUXQmYjbfNgGCnUaBusEn5t6htwt9YSE8Fkz3xZFMggB8xTXo", // price ordered CSV list of orders
+         "days": {
+            "42658400": {
+               "b": 0.002, // low price
+               "c": 1, //close
+               "d": 3070, // target volume
+               "o": 0.166667, // open price
+               "t": 1, // high price
+               "v": 2000 // base volume
+            }, // ... market OCHL 
+         },
+         "sellBook": "0.990000_DLUXQmf4iqgD1ze4HpiWBgzicQ8Ab76MzVBA1457nT1SXB8CsL",  // price ordered CSV list of orders
+         "tick": "0.008000", // last trade price
+         "sells": [
+            {
+               "amount": 500000, // TOKEN for sale
+               "block": 89660179, // open block
+               "expire_path": "90524179:QmQNx4MShbNP2Dhr7bFeGCHgSD1UuSuJvovhCetQfXP2nj", // block number and internal ID of virtual operation
+               "fee": 2501, // fee of full trade => 2.501 TOKEN
+               "from": "savvytester", // Account that placed order
+               "hbd": 495000, // $495.000 HBD
+               "hive": 0, // NOT a HIVE Order
+               "hive_id": "50161f90e57943977a9f357d777fa2ed411d5a2a", // TXID of savvytester's Hive transaction to open the order
+               "rate": "0.990000", // price
+               "txid": "DLUXQmf4iqgD1ze4HpiWBgzicQ8Ab76MzVBA1457nT1SXB8CsL", // Internal order ID
+               "type": "hbd:sell", 
+               "key": "0.990000:DLUXQmf4iqgD1ze4HpiWBgzicQ8Ab76MzVBA1457nT1SXB8CsL", // Price + TXID
+               "hivenai": {
+                  "amount": 0,
+                  "precision": 3,
+                  "token": "HIVE"
+               },
+               "hbdnai": {
+                  "amount": 495000,
+                  "precision": 3,
+                  "token": "HBD"
+               },
+               "amountnai": {
+                  "amount": 500000,
+                  "precision": 3,
+                  "token": "DLUX"
+               },
+               "feenai": {
+                  "amount": 2501,
+                  "precision": 3,
+                  "token": "DLUX"
+               } // order data that includes precision detail 
+            }
+         ],
+         "buys": []
+      },
+      "hive": {
+         "buyBook": "0.000014_DLUXQmZ7wzWDgkX6RMwT4sfoNjJ8k8WSX5XbuYZLo2r1VRxusf",
+         "days": {
+            "42658400": {
+               "b": 0.001,
+               "c": 1,
+               "d": 5001,
+               "o": 1,
+               "t": 1,
+               "v": 2001
+            }, // history by dao buckets (roughly days)
+         },
+         "sellBook": "0.129000_DLUXQmVzNnUNM1USX1zEkYHsoh9S8NhfTBSAUhWwmq5EFgcxaC",
+         "sellOrders": {
+            "0.129000:DLUXQmVzNnUNM1USX1zEkYHsoh9S8NhfTBSAUhWwmq5EFgcxaC": {
+               "amount": 19000000,
+               "block": 89753258,
+               "expire_path": "90617258:QmWQwRJGXxkdb7XLdg6eNFbsUFa3C4JanJeoCoDsLveP26",
+               "fee": 95001,
+               "from": "savvytester",
+               "hbd": 0,
+               "hive": 2451000,
+               "hive_id": "5fcdf5e423855960103452152f87dd2abfae8e1c",
+               "rate": "0.129000",
+               "txid": "DLUXQmVzNnUNM1USX1zEkYHsoh9S8NhfTBSAUhWwmq5EFgcxaC",
+               "type": "hive:sell",
+               "key": "0.129000:DLUXQmVzNnUNM1USX1zEkYHsoh9S8NhfTBSAUhWwmq5EFgcxaC"
+            }, // ...
+         },
+         "tick": "0.169000",
+         "sells": [
+            {
+               "amount": 997560815,
+               "block": 0,
+               "expire_path": "NA",
+               "fee": 0,
+               "from": "ICO",
+               "hbd": 0,
+               "hive": 997560815,
+               "rate": "1.000000",
+               "txid": "DLUXICO",
+               "type": "hive:sell",
+               "key": "1.000000:DLUXICO",
+               "hivenai": {
+                  "amount": 997560815,
+                  "precision": 3,
+                  "token": "HIVE"
+               },
+               "hbdnai": {
+                  "amount": 0,
+                  "precision": 3,
+                  "token": "HBD"
+               },
+               "amountnai": {
+                  "amount": 997560815,
+                  "precision": 3,
+                  "token": "DLUX"
+               },
+               "feenai": {
+                  "amount": 0,
+                  "precision": 3,
+                  "token": "DLUX"
+               }
+            }, // ...
+         ],
+         "buys": [
+            {
+               "amount": 196357142,
+               "block": 89140334,
+               "expire_path": "90004334:QmPc9J8PzB57bLWNnGSQm5qDqMx8AJa212zy2kPVKZ5oC5",
+               "fee": 1963572,
+               "from": "quinnertronics",
+               "hbd": 0,
+               "hive": 2749,
+               "hive_id": "81eaf404d529b92677219bcb7a518391cbcf5be3",
+               "rate": "0.000014",
+               "txid": "DLUXQmZ7wzWDgkX6RMwT4sfoNjJ8k8WSX5XbuYZLo2r1VRxusf",
+               "type": "hive:buy",
+               "key": "0.000014:DLUXQmZ7wzWDgkX6RMwT4sfoNjJ8k8WSX5XbuYZLo2r1VRxusf",
+               "hivenai": {
+                  "amount": 2749,
+                  "precision": 3,
+                  "token": "HIVE"
+               },
+               "hbdnai": {
+                  "amount": 0,
+                  "precision": 3,
+                  "token": "HBD"
+               },
+               "amountnai": {
+                  "amount": 196357142,
+                  "precision": 3,
+                  "token": "DLUX"
+               },
+               "feenai": {
+                  "amount": 1963572,
+                  "precision": 3,
+                  "token": "DLUX"
+               }
+            }, // ...
+         ]
+      },
+      "liq": { // Open order interest for liquidity rewards
+         "quinnertronics": 27490
+      }
+   },
+   "stats": {
+      // ...
+   },
+}
+```
 
 ## NFT API
 
