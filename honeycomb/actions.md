@@ -3,7 +3,7 @@
 ## Standard Actions
 
 token_ in the ids is the config.prefix.
-dlux_send on DLUX for example
+dlux_ => dlux_send on DLUX for example
 
 ### Send (id: token_send)
 
