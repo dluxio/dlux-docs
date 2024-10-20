@@ -345,14 +345,20 @@ This action airdrops tokens to a list of wallets.
 ```
 ### FT Escrow (id: token_ft_escrow)
 
-This action creates escrow contract for a token.
-
+This action creates escrow contract for a token. Used for interaccount sales. This proposes a sale which can be completed below.
 #### params:
 * set = string representing the name of the NFT set
+* to = string account that can accept the trade
+* price = int token plus precision.
 
 #### example:
-Not implemented
-
+```json
+`json:{
+    set: "dlux",
+    to: "markegiles",
+    price:1000
+}`
+```
 
 ### FT Escrow Complete (id: token_ft_escrow_complete)
 
@@ -383,9 +389,19 @@ This action lists a token for sale on the market.
 
 #### params:
 * set = string representing the name of the NFT set
+* hive | hbd | price = int with precision specifiying the sale price
+* quantity = int for items for sale
+* distro = string account_centipercents,etc_etc hive name and percent to distribute hive and HBD to, not availible for in token sales. distro centipercents must add to 10000
 
 #### example:
-Not implemented
+```json
+`json:{
+    set: "dlux",
+    hive: 1000 //hbd also possible, "price" for in token pricing (1000 is 1.000 Hive)
+    quantity: 1,
+    distro: "markegiles_9000,dlux-io_1000" // hive and hbd sales can be auto split to accounts.
+}`
+```
 
 
 ### FT Buy (id: token_ft_buy)
@@ -396,7 +412,7 @@ This action places a buy order for token on the market.
 * set = string representing the name of the NFT set
 
 #### examples:
-Not implemented
+
 
 
 ### FT Sell Cancel (id: token_ft_sell_cancel)
@@ -407,7 +423,7 @@ This action cancels the sale for a token on the market.
 * set = string representing the name of the NFT set
 
 #### examples:
-Not implemented
+
 
 
 ### FT Auction (id: token_ft_auction)
@@ -419,8 +435,6 @@ This action lists a token up for action.
 
 #### example:
 
-Not implemented
-
 
 ### FT Bid (id: token_ft_bid)
 
@@ -431,5 +445,4 @@ This action enters an auction bid for a token.
 
 #### example:
 
-Not implemented
 
