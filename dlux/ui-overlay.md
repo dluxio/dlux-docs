@@ -1,3 +1,4 @@
+# UI Overlay
 The dlux `UI Overlay` is built with `bootstrap 4` ([Get Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/))
 
 The XR scene, or any other type of HTML5 `canvas` experience you build, has a layer above it called the `UI Overlay`.

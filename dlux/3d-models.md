@@ -1,5 +1,7 @@
-# A-Frame recommends glTF ([Source](https://aframe.io/docs/0.8.0/components/gltf-model.html))
+# 3D Models
 
+## glTF ([Source](https://aframe.io/docs/0.8.0/components/gltf-model.html))
+A-Frame recommends glTF
 glTF is the rising star of 3D asset distribution viewing. In comparison to the older OBJ format, which supports only vertices, normals, texture coordinates, and basic materials, glTF provides a more powerful set of features. In addition to all of the above, glTF offers:
 
 * Hierarchical objects

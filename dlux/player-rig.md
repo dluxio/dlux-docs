@@ -1,6 +1,7 @@
-### Built In
+# Player Rig
+## Built In
 The player rig is pre-configured and ready to go in dlux boilerplates. You don't need to do anything to make it work.
-### Install
+## Install
 If you are starting from scratch and would like to build the player rig, you will need:
 * Controls in A-Frame Extras by Don McCurdy ([GitHub Source](https://github.com/donmccurdy/aframe-extras/tree/master/src/controls))
 * Pathfinding in A-Frame Extras by Don McCurdy ([GitHub Source](https://github.com/donmccurdy/aframe-extras/tree/master/src/pathfinding))
@@ -18,7 +19,7 @@ If you are starting from scratch and would like to build the player rig, you wil
 <script src="https://unpkg.com/networked-aframe@^0.6.0/dist/networked-aframe.min.js"></script>
 </head>
 ```
-### Setup
+## Setup
 You can think of the player as a body that moves throughout the world and has a camera for a head.
 
 1. Use `movement-controls`, a Collection of locomotion controls, which can switch between input devices as they become active. Automatically includes the following components:

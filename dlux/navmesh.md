@@ -1,4 +1,5 @@
-# What & Why
+# Navmesh
+## What & Why
 As the player moves around the world, we must define where the player may and may not go. The best way to achieve high performance is by defining a navmesh.
 
 > A navigation mesh, or navmesh, is an abstract data structure used in artificial intelligence applications to aid agents in pathfinding through complicated spaces. This approach has been known since at least the mid-1980s in robotics, where it has been called a meadow map, and was popularized in video game AI in 2000. [_Wikipedia_](https://en.wikipedia.org/wiki/Navigation_mesh)

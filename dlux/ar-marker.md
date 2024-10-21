@@ -1,4 +1,8 @@
-### Install `AR.js` by Jerome Etienne ([GitHub Source](https://github.com/jeromeetienne/AR.js))
+# AR Marker
+
+## Install 
+
+Install `AR.js` by Jerome Etienne ([GitHub Source](https://github.com/jeromeetienne/AR.js))
 
 ```html
 <!doctype HTML>

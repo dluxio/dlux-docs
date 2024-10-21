@@ -1,4 +1,6 @@
-# dlux Builder is integrated with Glitch for free & easy remixing, prototyping, and publishing.
+# dlux Builder 
+
+Integrated with Glitch for free & easy remixing, prototyping, and publishing.
 
 ## Add 3D Model
 Models must be in glTF format (unpacked `.gltf`, embedded `.gltf`, binary `.glb`)

@@ -1,5 +1,5 @@
+# Video
 ## Streaming Video Options
-
 Use the SPK Network to host video files
 
 ## Load Video Assets

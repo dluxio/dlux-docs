@@ -1,4 +1,5 @@
-# The 3D world of dlux is built using WebXR
+# WebXR 
+The 3D world of dlux is built using WebXR
 
 We consider WebXR to be based on THREE.js including:
 

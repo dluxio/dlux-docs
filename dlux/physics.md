@@ -1,4 +1,5 @@
-### Use
+# Physics
+## Use
 At this time, dlux does not use `aframe-physics-system` by Don McCurdy ([GitHub Source](https://github.com/donmccurdy/aframe-physics-system)) by default.
 
 To create collisions with the ground, floor, and walls, we recommend a nav mesh to restrict player movement.

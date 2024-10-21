@@ -1,3 +1,5 @@
+# DLUX API
+
 dlux is the ultimate HIVE blockchain infrastructure. Not only does it publish any type of dApp you can imagine to the chain, it allows those posts to make posts!
 
 ## Token API

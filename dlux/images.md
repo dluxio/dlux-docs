@@ -1,4 +1,4 @@
-# Images for STEEM and dlux posts.
+# Images for dlux posts
 Posting through dlux includes both traditional 16x9 rectangular images for all front ends, and 360 equirectangular images for portal preview images in VR on dlux.
 
 ## Capture Images

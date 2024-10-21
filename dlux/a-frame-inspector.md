@@ -1,3 +1,5 @@
+# A-Frame Inspector
+
 With an A-Frame experience active:
 Press `ctl + alt + i` to open the inspector
 

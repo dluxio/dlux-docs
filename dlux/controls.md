@@ -1,3 +1,5 @@
+# Controls
+## Introduction
 #### `Controls` in A-Frame Extras by Don McCurdy ([GitHub Source](https://github.com/donmccurdy/aframe-extras/tree/master/src/controls))
 Allows us to declare `custom-controls`
 ```html
