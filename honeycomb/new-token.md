@@ -8,7 +8,7 @@ The following are an explanation of the Community Variables, that will be part o
 `msaccount=dlux-cc` in their .env, the name of the multi-sig account... normally tokenname-cc
 
 #### The Variables
-```
+```js
 const starting_block = 49988008; //from what block does your token start
 const prefix = 'dlux_' //Community token name for Custom Json IDs
 const TOKEN = 'DLUX' //Token name
@@ -49,7 +49,7 @@ const adverts = [
 ] // a list of pictures to cycle through in daily status posts.
 ```
 This will populate a CoinMarketCap compliant API with the token details. Name, SYMBOL, Icon, Supply Info, Whitepaper, Website, BlockExplorer, Info Text.
-```
+```js
 const detail = {
                 name: 'Decentralized Limitless User eXperiences',
                 symbol: TOKEN,
@@ -62,14 +62,14 @@ const detail = {
             }
 ```
 Smart Contracts go here. These are a little more advanced, but anything here will replace the current version. Discussed on their own.
-```
+```js
 const CustomJsonProcessing = []
 const CustomOperationsProcessing = []
 const CustomAPI = []
 const CustomChron = []
 ```
 Last, a feature model can drive smart UX on compliant websites like DLUX IO
-```
+```js
 const featuresModel = {
             claim_id: 'claim',
             claim_S: 'Airdrop',
