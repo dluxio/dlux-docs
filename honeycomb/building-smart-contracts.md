@@ -154,7 +154,7 @@ List of Accounts that have delegated thier Power and where it went
 ```json
 "make3d": {
             "austindro": 6412581, // to account
-            "disregardfiat": 10
+            "disregardfiat": 10,
             "t": 6412591 // t tracks total delegated
          },
 ```
