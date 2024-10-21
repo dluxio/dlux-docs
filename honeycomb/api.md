@@ -11,7 +11,7 @@ All calls contain the responding APIs configured account name, as well as where 
  Returns the current running parameters.
 
 #### Sample Respone 
-```
+```json
 {
    "result": {
       "MSHeld": {
@@ -65,7 +65,7 @@ All calls contain the responding APIs configured account name, as well as where 
 Gets a hive accounts honeycomb data
 #### Sample Respone 
 * GET`/@disregardfiat`
-```
+```json
 {
    "balance": 74253606, // Liquid Balance
    "claim": 836594, // Availible to claim
@@ -92,7 +92,7 @@ List of all processed user transactions. Some Internal transactions.
 * vop_ is a scheduled operation. the TXID is internally generated.
 * @account| message
 #### Sample Response
-```
+```json
 {
    "feed": {
       "89895386:vop_QmeC8Bhy4ccy3ewJP2a9JVFqnWsEZPz5uhWVH5YQK9sd8H": "@kriptonik| powered down 7.166 DLUX",
@@ -108,7 +108,7 @@ List of all processed user transactions. Some Internal transactions.
 This api provides a limited amount of transaction specific feedback. If a transaction made it into the feed above, you can pull the status message associated with the TXID. This API is used to get feedback for hive transactions that have a honeycomb processing requirement. Each node can set how much history they'll carry, and if their node restarts it will start again at about 100 block back from HEAD. Therefore, this is best used for near instant feedback.
 #### Sample Respone 
 * `/api/status/87e19bcad61a3f46b19ca5fee0088ba7ed6469c3`
-```
+```json
 {
    "txid": "87e19bcad61a3f46b19ca5fee0088ba7ed6469c3",
    "status": "@disregardfiat| Claimed 874.515 DLUX - Half powered up."
@@ -117,7 +117,7 @@ This api provides a limited amount of transaction specific feedback. If a transa
 ### /markets
 This API provides the current details of the nodes, as well as the stats object. The name is a hold over from the days when the node runners provided an escrow market for atomic swaps. 
 #### Sample Respone 
-```
+```json
 {
    "markets": {
       "node": {
@@ -159,7 +159,7 @@ This API provides the current details of the nodes, as well as the stats object.
 ### /runners
 Runners is all nodes who are in consensus and have provided a meaningful amount of collateral in their gov balance. For instance, if 10 people have 1000, and 20 more come with 1. the overall colateral would have fallen significantly as the multisig is secured by several nodes who have little stake. 
 #### Sample Respone 
-```
+```json
 {
    "result": [
       {
@@ -235,7 +235,7 @@ Runners is all nodes who are in consensus and have provided a meaningful amount 
 ### /queue
 Much like runners above, this was a list of all nodes qualified to do escrow based atomic swaps. It still calculates the same data, but shows all nodes in consensus regardless of gov balance.
 #### Sample Respone 
-```
+```json
 {
    "queue": {
       "atexoras.witness": {
@@ -274,7 +274,7 @@ Protocol is used by frontend to know how to interact with each honeycomb instanc
 * Shows all consensus public API and Gov totals.
 * Tells the front end things like token prefix, so it can inteligently interact with differeing honeycomb communities.
 #### Sample Respone 
-```
+```json
 {
    "consensus": {
       "atexoras.witness": {
@@ -383,7 +383,7 @@ Protocol is used by frontend to know how to interact with each honeycomb instanc
 ### /api/mirrors
 The smallest API for finding consensus mirrors. 
 #### Sample Respone 
-```
+```json
 {
    "apis": [
       {
@@ -426,7 +426,7 @@ All Endpoints in DEX that start with /api are meant to follow [CoinGecko Integra
 ### /dex
 Is a call meant to draw the whole market for front ends. It can power charts, order books, and everything else
 #### Sample Respone
-```
+```json
 {
    "markets": {
       "hbd": {
@@ -598,7 +598,7 @@ The following API suite features all of the NFT and FT(Fungible or "sealed" Toke
 ### /api/nfts/:user
 #### Sample Response
 * `/api/nfts/disregardfiat`
-```
+```json
 {
    "result": [
       {
@@ -626,7 +626,7 @@ The following API suite features all of the NFT and FT(Fungible or "sealed" Toke
 Get information of a specific NFT
 #### Sample Response
 * `/api/nft/bz/0SL5C`
-```
+```json
 {
    "item": {
       "uid": "0SL5C",
@@ -669,7 +669,7 @@ Get information of a specific NFT
 ### /api/sets
 Get a list of all sets in honeycomb
 #### Sample Response
-```
+```json
 {
    "result": [
       {
@@ -798,7 +798,7 @@ Every
 * data to compile
 #### Sample Response
 * `\api/set/hf`
-```
+```json
 {
    "result": [
       {
@@ -859,7 +859,7 @@ Every
 ### /api/auctions
 All NFTs at Auction
 ### Sample Response
-```
+```json
 {
    "result": [
       {
@@ -903,7 +903,7 @@ A list of NFTs for sale from one set
 ### /api/mintsales
 A list of FTs for sale
 #### Sample Response
-```
+```json
 {
    "result": [
       {
@@ -929,7 +929,7 @@ A list of FTs for sale from one set
 ### /api/mintsupply
 A comprehensive list of FTs from all sources
 #### Sample Response
-```
+```json
 {
    "result": [
       {
@@ -1032,7 +1032,7 @@ A comprehensive list of FTs from all sources in one set
 A registered NFT used as their profile picture. API to prove ownership and get the NFT badge on frontends like Peak-D
 #### Sample Response
 * ``
-```
+```json
 {
    "result": [
       {
@@ -1072,7 +1072,7 @@ List of pending trades per user
 * `/api/trades/nft/disregardfiat`
 #### Sample Response
 * `/api/trades/ft/disregardfiat`
-```
+```json
 {
    "result": [
       {
@@ -1148,7 +1148,7 @@ Call to list all currently votable content. (Does not require Docker Data)
 
 #### Response
 
-```
+```json
 {
    "feed": {
       "bezkresu/art-workshops-in-the-kingdom": {
