@@ -12,7 +12,7 @@ Honeycomb keeps everything relatively simple. It's memory is almost identical in
 
 #### ah | NFT Auction House
 Internal Priced auctions appear here, these auctions don't have collateral requirements to hold bids in escrow.
-```
+```json
 "hf:3i": { // setname:UID
             "c": 0, // number of accepted bids
             "e": 90064222, // Expiration Block
@@ -31,7 +31,7 @@ Internal Priced auctions appear here, these auctions don't have collateral requi
 #### ahh | NFT Auction House Hive
 Hive and HBD priced auctions, these auctions have a collateral requirement to escrow bids.
 * UID : Object
-```
+```json
 "hf:3i": { // setname:UID
             "c": 0, // number of accepted bids
             "e": 90064222, // Expiration Block
@@ -58,7 +58,7 @@ Tokens ready to be claimed. These will go 50% to balances and 50% to pow (defaul
 #### chrono | Chron / Scheduled Virtual Operations
 Scheduled operations are here. These include things like expiring trades and auctions, down power transactions, and creating NFT mints.
 * UID : Object
-```
+```json
 "90004293:QmbNmMGRsoeYmuEFBArgiiPvuHAryxx1QStXvuBGbL6JGT": { // block : UID
             "block": 90004293, // block
             "from": "quinnertronics", // info rquired for op
@@ -69,7 +69,7 @@ Scheduled operations are here. These include things like expiring trades and auc
 #### contracts | Open DEX Orders by Account
 List of Accounts
 * Account : Object of Lists of Contracts
-```
+```json
 "damla": { // acount
     "DLUXQmbDwW8dnzLwXv4Y4BpNGs8kCnH1YdddvSZWzBaHz1GF2h": { // UID of open Trade
         "amount": 1950, // token amount
@@ -100,7 +100,7 @@ This contains a market centric view of open DEX contracts as well as a compresse
 #### div | Dividend Information
 Information about NFT Dividends
 * set | Object
-```
+```json
 "hf": {
             "b": 1098, // balance remainder from last dividend
             "e": 1970, // number minted in set
@@ -112,7 +112,7 @@ Information about NFT Dividends
 #### down | Down Vote Mana Tracking
 Used to calculate down power votes
 * Account | Object
-```
+```json
 "markegiles": {
             "last": 80710971, //last downvote
             "max": 50080649550, // last calculated mana size (so changes in power balance can't be gamed)
@@ -122,16 +122,17 @@ Used to calculate down power votes
 #### feed | 24-28 Hour TX Feed
 A list of all Hive Transactions that change Token State
 * UID | Status Message
-```
+```json
 "89964774:87e19bcad61a3f46b19ca5fee0088ba7ed6469c3": "@disregardfiat| Claimed 874.515 DLUX - Half powered up." // Block Number:txid
 ```
 #### fts | Sealed NFT Pending Transfers
+```json
 "t": { // *T*oken | *H*ive | hb*D*
             "dlux:QmPzuKzUqo6zXoLUzXuZvYniR77GuFbJrXgBZvHqWHs6XZ": { //uid of trade
                "i": "dlux:QmPzuKzUqo6zXoLUzXuZvYniR77GuFbJrXgBZvHqWHs6XZ", //uid
                "t": "disregardfiat_forykw_100000" // from_to_price
             },
-
+```
 #### gov | Locked Gov Balances
 Tokens that are locked to secure the DEX / Multi-Sig Account
 * Account Name : Int
@@ -139,7 +140,7 @@ Tokens that are locked to secure the DEX / Multi-Sig Account
 #### govd | Scheduled Down Powers By Account
 List of Chron Ops by Account
 * Account | List of Chron Ops
-```
+```json
 "atexoras.pub": {
             "78513557:QmQKxUWE1RYeBa82B4p8bhfx6v3wCBdBp4atBX2nppxtpt": "78513557:QmQKxUWE1RYeBa82B4p8bhfx6v3wCBdBp4atBX2nppxtpt",
             "78715157:QmeTjDXn9rg8UzMwRJ7cTP5qa2crGsRk6F2oQp1gCSFBcD": "78715157:QmeTjDXn9rg8UzMwRJ7cTP5qa2crGsRk6F2oQp1gCSFBcD",
@@ -150,7 +151,7 @@ List of Chron Ops by Account
 #### granted | Granting Power
 List of Accounts that have delegated thier Power and where it went
 * Account | List
-```
+```json
 "make3d": {
             "austindro": 6412581, // to account
             "disregardfiat": 10
@@ -160,7 +161,7 @@ List of Accounts that have delegated thier Power and where it went
 #### granting | Granting Power
 List of accounts recieving delegation of Power
 * Account | List
-```
+```json
 "austindro": {
             "make3d": 6412581, // delegating account with amount
             "t": 6412581 // total delegated
@@ -168,7 +169,7 @@ List of accounts recieving delegation of Power
 ```
 #### ls | NFTs for Sale
 * UID | Object
-```
+```json
 "hf:7k": {
             "h": "HBD",  // HIVE TOKEN
             "i": "hf:7k", // uid
@@ -180,13 +181,15 @@ List of accounts recieving delegation of Power
          }
 ```
 #### lt | FTs for sale in token
+```json
 "dlux:QmZkaG6eqnMnR6gxFUPqchMDcsjuHTcV9ts41LjvCRHoTL": {
             "i": "dlux:QmZkaG6eqnMnR6gxFUPqchMDcsjuHTcV9ts41LjvCRHoTL",
             "o": "markegiles",
             "p": 10000000
          }
-#### lth | FTs for sale in Hive/HBD
 ```
+#### lth | FTs for sale in Hive/HBD
+```json
 "dlux:QmRL4xmQqUNFV5kUpiSHhR6S5xvGhL76ekdFfEAN5PRD4Y": { //generating UID
             "b": 0, // bids
             "d": "disregardfiat_5000,markegiles_5000", //distrobution of proceeds ( 50%/50%)
