@@ -1,6 +1,6 @@
-## Start A New Node
+# Start A New Validator Node
 
-### Prerequisites
+## Prerequisites
 
 * [Hive account](https://signup.hive.io/) with ~300 Hive Power worth of Resource Credits available for each node you wish to install
 * SSH private and .pub key for your computer ([Mac/Linux](https://docs.oracle.com/en/cloud/cloud-at-customer/occ-get-started/generate-ssh-key-pair.html), [Windows](https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows))
@@ -8,7 +8,7 @@
 
 ---
 
-### Generate Node Key Pair
+## Generate Node Key Pair
 This is like a witness key pair and is additional to your account. Since you are not creating a new account, these keys are not tied to any Hive user and are merely a cryptographic key pair.
 1. Go to [Account Creator](https://hivetasks.com/account-creator)
 2. Type in anything for Account Name and click `Generate`
@@ -18,7 +18,7 @@ Repeat these steps for each node you wish to install.
 
 ---
 
-### Configure API Domain
+## Configure API Domain
 1. Login to your DNS manager
 2. Go to Advanced DNS for the domain name
 3.  Add an `A record` subdomain
@@ -29,7 +29,7 @@ Repeat these steps for each node you wish to install.
 
 ---
 
-### Get Server (Privex)
+## Get Server
 You may use any server of your choosing. Privex is chosen because it is Hive friendly, [IPFS](https://ipfs.dlux.io/) friendly, and can be paid in Hive or HBD.
 
 Go to [Privex server](https://www.privex.io) or equivalent of your choosing:
@@ -60,7 +60,7 @@ Go to [Privex server](https://www.privex.io) or equivalent of your choosing:
 
 ---
 
-### Docker Deploy
+## Docker Deploy
 Once you have an up-to-date ubuntu server with docker, you can install Honeycomb nodes. Do this by cloning the repo for the community you want to run. You can run multiple nodes on a single server, one CPU core per node is recommended (plus one core for IPFS).
 
 1. Clone the appropriate Honeycomb repo and move to its directory
@@ -97,7 +97,7 @@ mspublic=STMpublickey
    - Type `ctrl-x` then `y` to save
 4. Type `sudo docker-compose build` to build the Docker environment
 5. Deploy OR install another node
-#### Once the environment is built, you can either deploy the single node, or install more nodes.
+### Once the environment is built, you can either deploy the single node, or install more nodes.
    > Do not deploy if you wish to install another node
    - Option 1: Type `cd ~` to return home and clone another repo or configure Docker for multiple nodes
    - Option 2: Type `sudo docker-compose up` to deploy a single node on the server
@@ -106,7 +106,9 @@ mspublic=STMpublickey
 
 ---
 
-### Configure Multiple Nodes (optional)
+## Configure Multiple Nodes
+This step is optional and only required for running multiple nodes.
+
 If you installed more than one node on the server, you need to configure Docker to point to each of them. If you only installed one node, this step is unneccessary as your node is already deployed.
 
 > Ensure you are in the home directory by typing `cd ~` first
@@ -184,11 +186,11 @@ volumes:
 
 ---
 
-### Deploy with Pm2 (Alternative to Docker)
-
+## Deploy with Pm2
+Follow this guide to deploy with Pm2 as an alternative to Docker:
 https://hive.blog/hive-163521/@balaz/step-by-step-guide-to-deploy-and-run-honeycomb-node-without-using-docker
 
-### Nginx Setup
+## Nginx Setup
 Finally, install certbot to manage the SSL certificate(s) for the API domain(s)
 
 - If your nodes logs are running, press `ctrl-z` to move them to the background
@@ -249,13 +251,14 @@ To test, visit your subdomain in a browser and verify a secure https connection.
 
 ---
 
-### Caddy Setup (Alternative to NGINX)
+## Caddy Setup
+This is an alternative setup to NGINX
 
 This is not a mandatory step for running your node. If your Docker or Pm2 is already running your node, you are done. This step covers hosting your node using Caddy and associating a domain or sub domain to your node. 
 
 https://stemgeeks.net/hive-163521/@balaz/step-by-step-guide-to-associate-a-domain-or-sub-domain-to-your-honeycomb-spkcc-node-using-caddy
 
-### Governance And Voting
+## Governance And Voting
 Now that you have a functioning node running, go to [dlux.io/dex](https://vue.dlux.io/dex) and choose the token for the community node you installed. Login with the account matching the node `.env` file.
 
 If your node has successfully called out, it will bid the state unlocking some new options in the black menu bar at the top:
@@ -281,7 +284,7 @@ The DEX page also shows the token status, along with how many node runners there
 
 ---
 
-### Status
+## Status
 The pizza team maintains dashboards for the status of Honeycomb tokens. You can see stats here, including whether your node is in concensus, a runner, how much locked governance token it has, and vote status.
 - [DLUX Monitor - https://hiveuprss.github.io/dluxmonitor/](https://hiveuprss.github.io/dluxmonitor/)
 - [SPKCC Monitor - https://hiveuprss.github.io/spkccmonitor/](https://hiveuprss.github.io/spkccmonitor/)

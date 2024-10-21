@@ -1,9 +1,20 @@
-### Securing a DEX 
-HoneyComb in one sentence would be: Software helping us agree to control an account. For chains like SPK there will hopefully be several multi-sig accounts allowing DEX trading of 3 internal tokens against at least 2 coins. Internal DEXs are much easier to secure than DEXs than control external funds, like a Hive wallet. Worst case you can fork to secure internal assets, where the worst case for a Hive wallet is complete loss of the funds and accounts. Some things that aren't even an issue with securing a DEX still play into security for people. Such as spoofing a front end that tells end users the DEX wallet is at the wrong place. Being security minded is the only path forward in an ecosystem where DeFi has been hacked collectively for hundreds of millions of dollars. 
+# Node Voting
+## Securing a DEX 
+HoneyComb in one sentence would be: Software helping us agree to control an account. 
+
+For chains like SPK there will hopefully be several multi-sig accounts allowing DEX trading of 3 internal tokens against at least 2 coins. 
+
+Internal DEXs are much easier to secure than DEXs than control external funds, like a Hive wallet.
+
+Worst case you can fork to secure internal assets, where the worst case for a Hive wallet is complete loss of the funds and accounts. 
+
+Some things that aren't even an issue with securing a DEX still play into security for people, such as spoofing a front end that tells end users the DEX wallet is at the wrong place. 
+
+Being security minded is the only path forward in an ecosystem where DeFi has been hacked collectively for hundreds of millions of dollars. 
 
 This DEX tries to maintain a functional amount of Liquidity that is also small enough to not be a target. 
 
-#### Refunds
+## Refunds
 
 Every block (3 seconds) the nodes determine how much Hive can be held, and if they are over that limit will trigger order cancels for the lowest priced buy orders. 
 
@@ -44,10 +55,10 @@ DM: 100% DS 100% for 5cents: 50 Hive
 
 Encouraging good quality liquidity, and keeping it available should be the goal. Over the past 24 Hours nearly $3000 has moved through the account with as little as $500 of Liquidity in the account. This means our DEX is functional, and never mind how secure the network is, $500 probably isn't enough to even try and hack it.
 
-#### DEX Fees
+## DEX Fees
 
 One of the other important levers accounts can currently control is the DEX Fee. Currently it's pushing .6%. This means that Roughly $18 was collected in fees. Which over a month would be ~$540. Or possible $21.6 per consensus node operator with the current 25 node limit. This could be adjusted as high as 1% or as low as nil. In the future all kinds of feedback metrics is possible to better the asset interface and security. It's important to note, that as long as you can contribute liquidity to this network you'll be paid the same per block. 
 
-#### DAO Claim Vote
+## DAO Claim Vote
 
 The SPK CC has another lever called the DAO claim vote. This determines the relative size of tokens will be allocated into the SPK DAO. Only about 70M of the 350M tokens were claimed in March and the initial plan was to move all unclaimed tokens into the DAO. However, holding ~400% of the liquid tokens in a DAO significantly impacts their ability to hold value when distributed. So the network will only claim up to 100% and likely significantly less to improve the overall value and stability for it's current claimers and purchasers. The default is 15%. 

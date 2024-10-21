@@ -1,13 +1,13 @@
-### To Build Your Own Token
+# Create A New Token
 
-Use the new [token creator](https://www.dlux.io/new/token) to help set up a multi-sig account and configure the community variables.
+Use the [token creator](https://www.dlux.io/new/token) to help set up a multi-sig account and configure the community variables.
 
 As of version 1.5 community variables are stored in the profile data of the DEX account, allowing the community to change variables with voting and not having to worry about keeping nodes configured.
 
 The following are an explanation of the Community Variables, that will be part of the Token Creators output. Only the initializing account will need to run these, everybody else will just have to put:
 `msaccount=dlux-cc` in their .env, the name of the multi-sig account... normally tokenname-cc
 
-#### The Variables
+## The Variables
 ```js
 const starting_block = 49988008; //from what block does your token start
 const prefix = 'dlux_' //Community token name for Custom Json IDs
@@ -48,6 +48,7 @@ const adverts = [
     'https://camo.githubusercontent.com/954558e3ca2d68e0034cae13663d9807dcce3fcf/68747470733a2f2f697066732e627573792e6f72672f697066732f516d64354b78395548366a666e5a6748724a583339744172474e6b514253376359465032357a3467467132576f50'
 ] // a list of pictures to cycle through in daily status posts.
 ```
+## API Details
 This will populate a CoinMarketCap compliant API with the token details. Name, SYMBOL, Icon, Supply Info, Whitepaper, Website, BlockExplorer, Info Text.
 ```js
 const detail = {
@@ -61,6 +62,7 @@ const detail = {
                 text: `DLUX is a Web3.0 technology that is focused on providing distribution of eXtended (Virtual and Augmented) Reality. It supports any browser based applications that can be statically delivered through IPFS. The DLUX Token Architecture is Proof of Stake as a layer 2 technology on the HIVE blockchain to take advantage of free transactions. With the first WYSIWYG VR Builder of any blockchain environment and the first Decentralized Exchange on the Hive Blockchain, DLUX is committed to breaking any boundaries for adoption of world changing technologies.`
             }
 ```
+## Smart Contracts
 Smart Contracts go here. These are a little more advanced, but anything here will replace the current version. Discussed on their own.
 ```js
 const CustomJsonProcessing = []
@@ -68,7 +70,8 @@ const CustomOperationsProcessing = []
 const CustomAPI = []
 const CustomChron = []
 ```
-Last, a feature model can drive smart UX on compliant websites like DLUX IO
+## Dynamic UI
+Last, a feature model can drive dynamically updating User Interfaces (UI) on compliant websites like DLUX IO
 ```js
 const featuresModel = {
             claim_id: 'claim',
