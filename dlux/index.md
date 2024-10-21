@@ -3,12 +3,12 @@
 layout: home
 
 hero:
-  name: "SPK Network"
-  tagline: Decentralized network infrastructure<hr>Open XR worlds across headset, desktop, and mobile
+  name: "DLUX"
+  tagline: Decentralized Limitless User eXperiences<hr>Open XR worlds across headset, desktop, and mobile
   actions:
     - theme: brand
       text: Get Started
-      link: /spk/what-is-spk
+      link: /dlux/what-is-dlux
     - theme: alt
       text: Home
       link: /

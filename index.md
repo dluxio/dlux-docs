@@ -10,10 +10,10 @@ hero:
     - theme: brand
       text: DLUX
       link: /dlux
-    - theme: alt
+    - theme: brand
       text: SPK
       link: /spk
-    - theme: alt
+    - theme: brand
       text: Honeycomb
       link: /honeycomb
 
@@ -21,7 +21,7 @@ features:
   - title: DLUX Publishing
     details: 360 photos, videos, 3D models and worlds, games, apps, and NFTs
   - title: SPK Network
-    details: Decentralized network infrastructure including encrypted cloud
+    details: Decentralized network infrastructure including encrypted cloud storage
   - title: Honeycomb
     details: Launch your own Layer 2 community on the HIVE blockchain
 ---
