@@ -26,7 +26,7 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'DLUX', link: '/dlux' },
+      { text: 'DLUX', link: '/dlux/what-is-dlux' },
       { text: 'SPK', link: '/spk' },
       { text: 'Honeycomb', link: '/honeycomb' },
       { text: '1.5.0',
@@ -60,6 +60,7 @@ export default defineConfig({
       {
         text: 'Getting Started',
         items: [
+          { text: 'What Is DLUX?', link: '/dlux/what-is-dlux' },
           { text: 'Glitch Quickstart', link: '/dlux/glitch-quickstart' },
           { text: 'DLUX Builder', link: '/dlux/dlux-builder' },
           { text: 'A-Frame Inspector', link: '/dlux/a-frame-inspector' },
