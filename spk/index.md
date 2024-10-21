@@ -1,6 +1,6 @@
-## SPK Network Documentation
+# SPK Network Documentation
 
-### Prerequisites
+## Prerequisites
 
 * [Hive account](https://signup.hive.io/) with resource credits
 * SSH private and .pub key for your computer ([Linux/Debian](https://docs.oracle.com/en/cloud/cloud-at-customer/occ-get-started/generate-ssh-key-pair.html)
@@ -8,7 +8,7 @@
 
 ---
 
-### Generate Node Key Pair
+## Generate Node Key Pair
 This is an additional key pair. Since you are not creating a new account, these keys are not tied to any Hive user and are merely a cryptographic key pair that will be tied to your SPK account on layer 2.
 1. Go to [Account Creator](https://hivetasks.com/account-creator)
 2. Type in anything for Account Name and click `Generate`
@@ -16,7 +16,7 @@ This is an additional key pair. Since you are not creating a new account, these 
 
 ---
 
-### Configure IPFS Domain
+## Configure IPFS Domain
 1. Login to your DNS manager
 2. Go to Advanced DNS for the domain name
 3.  Add an `A record` subdomain
@@ -25,7 +25,7 @@ This is an additional key pair. Since you are not creating a new account, these 
 
 ---
 
-### Get Server (Privex)
+## Get Server (Privex)
 You may use any server of your choosing. Privex is chosen because it is Hive friendly, [IPFS](https://ipfs.dlux.io/) friendly, and can be paid in Hive or HBD.
 
 Go to [Privex server](https://www.privex.io) or equivalent of your choosing:
@@ -57,7 +57,7 @@ Go to [Privex server](https://www.privex.io) or equivalent of your choosing:
    - Install Script
 ---
 
-### Use Install Script
+## Use Install Script
 
 We've provided an install script that will install everything for you on an ubuntu/debian system.
 
