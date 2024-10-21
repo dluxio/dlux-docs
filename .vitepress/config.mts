@@ -39,23 +39,6 @@ export default defineConfig({
 
     sidebar: {
 
-      '/': [
-        {
-          text: 'Example',
-          items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
-          ]
-        },
-        {
-          text: '1.2.0',
-          items: [
-            { text: 'Changelog', link: '/changelog' },
-            { text: 'Contributing', link: '/contributing' }
-          ]
-        },
-      ],
-
       '/dlux/': [
         {
           text: 'DLUX Publishing',
