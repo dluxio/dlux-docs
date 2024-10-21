@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "SPK Network"
-  tagline: Decentralized network infrastructure<hr>Open XR worlds across headset, desktop, and mobile
+  tagline: Decentralized incentivized infrastructure<hr>Peer-to-peer services that replace traditional centralized services
   actions:
     - theme: brand
       text: Get Started
@@ -14,11 +14,11 @@ hero:
       link: /
 
 features:
-  - title: 360 Publishing
-    details: Experience immersive photos and videos
-  - title: Networked A-Frame
-    details: Explore user created worlds with your friends
-  - title: GameFi Wallet
-    details: Deeply integrated tokens and NFTs
+  - title: IPFS Storage
+    details: Encrypted file storage on IPFS
+  - title: LARYNX Mining
+    details: A mining token
+  - title: BROCA Storage
+    details: Linked to the storage on the network
 ---
 

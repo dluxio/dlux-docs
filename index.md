@@ -5,13 +5,13 @@ layout: home
 hero:
   name: "Documentation"
   text: "For DLUX, SPK, and Honeycomb L2's"
-  tagline: The most powerful open-source toolkit available to publish and own your content and community
+  tagline: Powerful open-source toolkits for publishing and owning your content and community
   actions:
     - theme: brand
-      text: DLUX
+      text: DLUX Publishing
       link: /dlux
     - theme: brand
-      text: SPK
+      text: SPK Network
       link: /spk
     - theme: brand
       text: Honeycomb

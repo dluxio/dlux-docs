@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "DLUX"
+  name: "DLUX Publishing"
   tagline: Decentralized Limitless User eXperiences<hr>Open XR worlds across headset, desktop, and mobile
   actions:
     - theme: brand
@@ -14,7 +14,7 @@ hero:
       link: /
 
 features:
-  - title: 360 Publishing
+  - title: 360 Images
     details: Experience immersive photos and videos
   - title: Networked A-Frame
     details: Explore user created worlds with your friends
