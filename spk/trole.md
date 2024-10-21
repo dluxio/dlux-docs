@@ -1,3 +1,2 @@
-# SPK Network 
-## Trole Documentation
+# Trole
 Manages file uploads from users

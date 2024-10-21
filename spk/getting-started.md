@@ -1,5 +1,4 @@
-# SPK Network - Getting Started
-
+# Getting Started
 ## Prerequisites
 
 * [Hive account](https://signup.hive.io/) with resource credits
