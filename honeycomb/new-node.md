@@ -72,7 +72,7 @@ Once you have an up-to-date ubuntu server with docker, you can install Honeycomb
 
 2. Type `touch .env && nano .env` to edit the node attributes
    - Type the following into the text editor: 
-```
+```sh
 # This is an example file. Uncomment and change any variables you would like to override.
 # The HIVE account running the node (defaults to disregardfiat)
 account="hiveaccount"
@@ -116,7 +116,7 @@ If you installed more than one node on the server, you need to configure Docker 
    - Update the token and directory to whichever nodes you installed
    - Here `dlux` at `./dlux`, `spkcc` at `./spkcc` and `duat` at `./duat` and are being used
    - Continue incrementing the ports as needed `3001:3001`, `3002:3001`, `3003:3001`, etc
-```
+```yaml
 version: '3'
 services:
        ipfs:
@@ -199,7 +199,7 @@ Finally, install certbot to manage the SSL certificate(s) for the API domain(s)
    - Select `nginx-full` if prompted
 2. Type `sudo nano /etc/nginx/sites-availible/default` to edit the config file
    - Modify the file to have one server block per node
-```
+```js
 server{
         listen 80;
         listen [::]:80;
