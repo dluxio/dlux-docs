@@ -1,14 +1,13 @@
-# DLUX
+# DLUX Publishing
+Decentralized Limitless User eXperiences
 
-## Decentralized Limitless User eXperiences
+## Proof of Brain
 
-### Proof of Brain
+## dApps
 
-#### dApps
+## Posting dApp
 
-##### Posting dApp
-
-###### Steps
+## Steps
 
 * Write a webapp with as little dependencies as possible.
 * Store it as an HTML file.
