@@ -1,8 +1,8 @@
-## SPK Network 
+# SPK Network 
 
-### Storage Documentation
+## Storage Documentation
 
-#### Storing Files
+### Storing Files
 
 You can build a storage contract backed by broca for the SPK Network. The difference between storing files for yourself(loading into IPFS) and storing on SPK network is mostly down to proving providence. This is so everybody who stores your files knows that you are ultimately responsible for what was uploaded.
 
@@ -10,7 +10,7 @@ Any SpkNetwork wallet should be able to help you build a file storage contract, 
 
 A Contract is between up to 3 parties as follows. A buyer, noted below as "your-account". A broker, responsible for placing a file into IPFS and updating a channel as complete(full of files). An Uploader, who will send a file to the broker. These three roles can all be the same account. A custom JSON must by signed with the folowing data.
 
-##### Unconditional
+### Unconditional
 ```
 id: spkcc_channel_open
 json: {
@@ -37,7 +37,7 @@ required_auths: [
    * This account must have a registered PubKey (for signing the upload offchain)
 * "contract": "0"
    * Unconditional Contract
-##### Conditional
+### Conditional
 ```
 id: spkcc_channel_open
 json: {
@@ -62,5 +62,5 @@ required_auths: [
    * "dlux-io,500" => 5% to @dlux-io
    * "spknetwork,1111" => 11.11% to @spknetwork
 
-### And Then
+## And Then
 Frontends or your localhost:5050 wallet should be able to see the open contract, and allow an upload to occur. The files must be signed by the uploader, who will verify the uploaded files match the signature, and forward that signature along with theirs to update the network about where the file(s) are stored.
