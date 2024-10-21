@@ -32,7 +32,7 @@ export default defineConfig({
       {
         text: '1.5.0',
         items: [
-          { text: 'Changelog', link: '/changelog' },
+          { text: 'Changelog', link: 'https://github.com/disregardfiat/honeycomb/blob/master/RELEASE.md' },
           { text: 'Contributing', link: '/contributing' },
         ]
       }
