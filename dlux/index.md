@@ -15,11 +15,17 @@ hero:
       link: /
 
 features:
-  - title: 360 Images
+  - icon:
+      src: /img/globe-solid.svg
+    title: 360 Images
     details: Experience immersive photos and videos
-  - title: Networked A-Frame
+  - icon:
+      src: /img/vr-cardboard-solid.svg
+    title: Networked A-Frame
     details: Explore user created worlds with your friends
-  - title: GameFi Wallet
+  - icon:
+      src: /img/wallet-solid.svg
+    title: GameFi Wallet
     details: Deeply integrated tokens and NFTs
 ---
 

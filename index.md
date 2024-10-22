@@ -18,11 +18,17 @@ hero:
       link: /honeycomb
 
 features:
-  - title: DLUX Publishing
+  - icon:
+      src: /img/dlux-logo.svg
+    title: DLUX Publishing
     details: 360 photos, videos, 3D models and worlds, games, apps, and NFTs
-  - title: SPK Network
+  - icon:
+      src: /img/spk-logo.svg
+    title: SPK Network
     details: Decentralized network infrastructure including encrypted cloud storage
-  - title: Honeycomb
+  - icon:
+      src: /img/honeycomb-logo.svg
+    title: Honeycomb
     details: Launch your own Layer 2 community on the HIVE blockchain
 ---
 
