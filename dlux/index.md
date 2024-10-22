@@ -3,8 +3,9 @@
 layout: home
 
 hero:
-  name: "DLUX Publishing"
-  tagline: Decentralized Limitless User eXperiences<hr>Open XR worlds across headset, desktop, and mobile
+  name: "DLUX"
+  text: "XR Publishing"
+  tagline: Open worlds across headset, desktop, and mobile
   actions:
     - theme: brand
       text: Get Started

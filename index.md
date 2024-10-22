@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Documentation"
   text: "For DLUX, SPK, and Honeycomb L2's"
-  tagline: Powerful open-source toolkits for publishing and owning your content and community
+  tagline: Powerful open-source tools for publishing and owning your content and community
   actions:
     - theme: brand
       text: DLUX Publishing

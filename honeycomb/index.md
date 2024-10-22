@@ -4,7 +4,8 @@ layout: home
 
 hero:
   name: "Honeycomb"
-  tagline: HIVE Layer 2 by DLUX<hr>White-label community token ecosystem that is customizable based on specific needs
+  text: "Hive Layer 2"
+  tagline: White-label community token ecosystem with endless options
   actions:
     - theme: brand
       text: Get Started
@@ -19,6 +20,6 @@ features:
   - title: Customizable
     details: Variables are now stored in the profile of the account
   - title: Open Source
-    details: Fork the source if you want (not required as of 1.5)
+    details: Fork the source if you want, no longer required as of 1.5
 ---
 

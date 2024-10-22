@@ -4,7 +4,8 @@ layout: home
 
 hero:
   name: "SPK Network"
-  tagline: Decentralized incentivized infrastructure<hr>Peer-to-peer services that replace traditional centralized services
+  text: "De-Services"
+  tagline: Peer-to-peer services that replace traditional centralized providers
   actions:
     - theme: brand
       text: Get Started
