@@ -16,15 +16,15 @@ hero:
 
 features:
   - icon:
-      src: /img/thumbtack-solid.svg
+      src: /img/thumbtack-solid.png
     title: IPFS Storage
     details: Encrypted file storage on IPFS
   - icon:
-      src: /img/microchip-solid.svg
+      src: /img/microchip-solid.png
     title: LARYNX Mining
     details: A mining token
   - icon:
-      src: /img/hard-drive-solid.svg
+      src: /img/hard-drive-solid.png
     title: BROCA Storage
     details: Linked to the storage on the network
 ---

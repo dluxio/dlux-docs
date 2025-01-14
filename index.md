@@ -19,15 +19,15 @@ hero:
 
 features:
   - icon:
-      src: /img/dlux-logo.svg
+      src: /img/dlux-logo.png
     title: DLUX Publishing
     details: 360 photos, videos, 3D models and worlds, games, apps, and NFTs
   - icon:
-      src: /img/spk-logo.svg
+      src: /img/spk-logo.png
     title: SPK Network
     details: Decentralized network infrastructure including encrypted cloud storage
   - icon:
-      src: /img/honeycomb-logo.svg
+      src: /img/honeycomb-logo.png
     title: Honeycomb
     details: Launch your own Layer 2 community on the HIVE blockchain
 ---

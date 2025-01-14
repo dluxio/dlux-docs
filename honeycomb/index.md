@@ -16,15 +16,15 @@ hero:
 
 features:
   - icon:
-      src: /img/file-contract-solid.svg
+      src: /img/file-contract-solid.png
     title: Smart Contracts
     details: NFTs, pFps, multi-sig, PoB
   - icon:
-      src: /img/gears-solid.svg
+      src: /img/gears-solid.png
     title: Customizable
     details: Variables are now stored in the profile of the account
   - icon:
-      src: /img/github-brands-solid.svg
+      src: /img/github-brands-solid.png
     title: Open Source
     details: Fork the source if you want, no longer required as of 1.5
 ---

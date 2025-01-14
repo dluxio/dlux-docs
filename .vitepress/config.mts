@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,6 +7,18 @@ export default defineConfig({
     hostname: 'https://dlux.io'
   },
   base: '/docs/',
+  vite: {
+    plugins: [
+      viteStaticCopy({
+        targets: [
+          {
+            src: 'img', // Source folder
+            dest: ''     // Destination folder in `dist`
+          }
+        ]
+      })
+    ]
+  },
   cleanUrls: true,
   lastUpdated: true,
   title: "Honeycomb L2",
@@ -24,7 +37,6 @@ export default defineConfig({
         indexName: 'dlux'
       }
     },
-
     nav: [
       { text: 'DLUX', link: '/dlux/what-is-dlux' },
       { text: 'SPK', link: '/spk/what-is-spk' },
@@ -36,9 +48,7 @@ export default defineConfig({
         ]
       }
     ],
-
     sidebar: {
-
       '/dlux/': [
         {
           text: 'DLUX Publishing',
@@ -87,8 +97,6 @@ export default defineConfig({
             { text: 'HIVE Blockchain', link: '/dlux/hive' },
           ]
         },
-
-
       ],
       '/spk/': [
         {
