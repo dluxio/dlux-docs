@@ -11,6 +11,9 @@ hero:
       text: Get Started
       link: /dlux/what-is-dlux
     - theme: alt
+      text: Planned Features
+      link: /planned-features/
+    - theme: alt
       text: Home
       link: /
 
@@ -20,9 +23,9 @@ features:
     title: 360 Images
     details: Experience immersive photos and videos
   - icon:
-      src: /img/vr-cardboard-solid.png
-    title: Networked A-Frame
-    details: Explore user created worlds with your friends
+      src: /img/vr-cardboard-solid.svg
+    title: Auto-Networked Content
+    details: Every post gets instant multiplayer capabilities with voice chat
   - icon:
       src: /img/wallet-solid.png
     title: GameFi Wallet

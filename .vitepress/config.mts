@@ -90,6 +90,14 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Networking',
+          collapsed: true,
+          items: [
+            { text: 'Wallet Auto-Injection', link: '/dlux/wallet-injection' },
+            { text: 'Presence Infrastructure', link: '/dlux/presence' },
+          ]
+        },
+        {
           text: 'Integrations',
           collapsed: true,
           items: [
